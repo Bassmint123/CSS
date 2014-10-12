@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Cimstrat Corporation Fixed width centre and fluid sides</title>
+<style type="text/css">
+*{margin:0;padding:0}
+
+body:before {/*Opera Fix*/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-bottom:-100px;/*header height*/
+}
+html,body{
+    height:100%;
+    background:#BBB;
+}
+
+#wrapper{
+    min-height:100%;
+    margin-top:-50px;/*footer soak up*/
+    position:relative;/*set as containing block for AP faux column*/
+}
+#innerwrap{/*IE6 needs this for the AP faux column*/
+    width:100%;
+    overflow:hidden;
+}
+#header{
+    border-top:50px solid #333;/*footer soak up*/
+    height:100px;
+    position:relative;
+    z-index:2;/*layer it above the AP faux*/
+    background:#333;
+    color:#FFF;
+    text-align:center;
+}
+#left {
+    width:50%;
+    float:left;
+    margin-right:-250px;
+    /*background:#fff; for visual testing*/
+}
+#inner-left{
+    margin-right:255px;
+    background:#BBB;/*same as body BG*/
+}
+#center {
+    width:500px;
+    float:left;
+    background:#FFF;
+    position:relative;
+    z-index:3;
+}
+#right {
+    width:50%;
+    float:right;
+    margin-left:-251px;
+}
+#inner-right {
+    margin-left:255px;
+    background:#BBB;/*same as body BG*/
+}
+#center-faux{
+    position:absolute;
+    width:500px;
+    left:50%;
+    bottom:0;
+    height:100%;
+    margin-left:-250px;
+    background:#FFF;
+    z-index:0;
+}
+* html #center-faux{height:999em}/*for IE6*/
+
+#footer{
+    clear:both;
+    width:100%;
+    height:50px;
+    background:#333;
+    color:#FFF;
+    text-align:center;
+}
+P{padding:10px 10px 0 10px;}
+</style>
+<!--[if (lte IE 6)|(gte IE 8)]>
+<style type="text/css">
+#wrapper {height:100%;display:table;}
+</style>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1>Fixed Width Center Column - Fluid sides</h1>
+    </div>  
+    <div id="innerwrap">  
+        <div id="left">
+            <div id="inner-left">
+                <p>
+                Left fluid column content : Left fluid column content : 
+                Left fluid column content : Left fluid column content : 
+                Left fluid column content : Left fluid column content : 
+                Left fluid column content : Left fluid column content : 
+                Left fluid column content : Left fluid column content : 
+                Left fluid column content : Left fluid column content : 
+                Left fluid column content : Left fluid column content : 
+                Left fluid column content : Left fluid column content : 
+                Left fluid last line of text.</p>
+            </div>
+        </div>
+        <div id="center">
+            <p>This layout is constructed using 2 floats of 50% each. One is floated left and the other floated right. 
+            Each float has a negative margin on the opposite side to the way the float is floated. The negative margin 
+            width is half the width that you want for your center column.</p>
+            <p>This will allow the floated center column to slide into place with a fixed width.</p>
+        </div>
+        <div id="right">
+            <div id="inner-right">
+                <p>
+                Right fluid column content : Right fluid column content : 
+                Right fluid column content : Right fluid column content : 
+                Right fluid column content : Right fluid column content : 
+                Right fluid column content : Right fluid column content : 
+                Right fluid column content : Right fluid column content : 
+                Right fluid column content : Right fluid column content : 
+                Right fluid column content : Right fluid column content : 
+                Right fluid column content : Right fluid column content : 
+                Right fluid last line of text.</p>
+            </div>
+        </div>
+    </div><!--end innerwrap-->
+    <div id="center-faux"></div>
+</div><!--end wrapper-->
+<div id="footer">
+    <h3>Footer</h3>
+</div>
+</body>
+</html>
