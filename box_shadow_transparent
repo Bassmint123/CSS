@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body {
+    background-color: #e6e6b8;
+}
+
+div.box1 {
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 10px;
+    left: 20px;
+    width: 250px;
+    height: 100px;
+    font-family: arial;
+    font-weight : normal;
+    font-style : italic;
+    font-size: 0.8em;
+    color: #808080;
+    background-color: white;
+    box-shadow: 5px 5px 5px #888888;
+    
+}
+div.box2 {
+    position: fixed;
+    left: 290px;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    /* This box is fixed and has a transparent shadow with 50% transparancy. Scroll
+       the text behind it to test. */
+    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+
+    
+}
+#author {
+   color: black;
+   font-family: arial;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.2em;
+}
+</style>
+</head>
+<body>
+
+<div class="box1">Tues Sep 16, 2014
+<p id="author">By Brad Beiermann</p>
+</div>
+
+<div class="box2">Well, hello.</div>
+<div>This is some sample text here. This is some sample text here.This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.vThis is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.v
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.vThis is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.v
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.vThis is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.v
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.vThis is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.v
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.vThis is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.v
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.vThis is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.v
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.vThis is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.v
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+This is some sample text here.This is some sample text here.This is some sample text here.
+
+
+</div>
+</body>
+</html>
