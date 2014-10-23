@@ -10,6 +10,7 @@ overflow: hidden;
 height: 100%; 
 max-height: 100%; 
 }
+
 #header {
     position: fixed;
     top: 0px;
@@ -54,11 +55,12 @@ max-height: 100%;
 }
 
 #navigation {
-    position: relative;
+    position: absolute;
     background-color: red;
     margin-left: auto;
     margin-right: auto;
     width: 960px;
+    top: 100px;
     height: 30px;
 }
 #content1 {
@@ -138,13 +140,12 @@ h1 {
 <div id="header">
 <div class="innertube">
 <h1>CSS Top Frame Layout</h1>
+<div id="navigation">navigation</div>
 </div>
 </div>
 
 <div id="maincontent">
 <div id="innercontent">
-
-  <div id="navigation">navigation</div>
   <div id="content1">content1</div>
 
     <div id=content2>     
