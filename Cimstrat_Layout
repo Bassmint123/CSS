@@ -35,7 +35,7 @@ max-height: 100%;
     right: 8px; /* offset for the scroll bars in the main content */
 }
 
-#maincontent{
+#maincontent {
     position: fixed; 
     top: 130px; /*Set top value to HeightOfFrameDiv*/
     left: 0;
@@ -44,7 +44,7 @@ max-height: 100%;
     overflow: scroll; 
     background: #FFF;
 }
-#innercontent{
+#innercontent {
     width: 960px;
     margin-right: auto;
     margin-left: auto;
