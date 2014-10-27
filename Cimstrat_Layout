@@ -6,6 +6,7 @@ body{
 margin: 0;
 padding: 0;
 border: 0;
+background: #ededed;
 overflow: hidden;
 height: 100%; 
 max-height: 100%; 
@@ -18,7 +19,7 @@ max-height: 100%;
     height: 130px;
     z-index: 1;
     background-color: white;
-/* This box is fixes and has a transparent shadow with 50% transparency. Scroll
+/* This box is fixed and has a transparent shadow with 50% transparancy. Scroll
        the text behind it to test. */
     -moz-box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
@@ -56,41 +57,97 @@ max-height: 100%;
 
 #navigation {
     position: absolute;
-    background-color: #FF0000;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
     width: 960px;
     top: 100px;
     height: 30px;
 }
-/* Begin Navigation Section */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 
-li {
-    float: left;
+/* Begin Navigation Bar */
+#menu_wrap {
+   position:relative;
+   margin-top:0px;
+   margin-left:auto;
+   margin-right:auto;
+   padding:0; 
+   padding-right:0px;
+   width:955px;
+   height:30px;
+   list-style-type:none;
+   -webkit-border-radius:20px;
+   -moz-border-radius:20px;border-radius:20px;
+   -webkit-box-shadow:0 1px 3px rgba(0,0,0,.2);
+   -moz-box-shadow:0 1px 3px rgba(0,0,0,.2);
+   box-shadow:0 1px 3px rgba(0,0,0,.2)
 }
-
-a:link, a:visited {
-    display: block;
-    width: 150px;
-    font-family: Calibri;
-    color: #FFFFFF;
-    background-color: #FF0000;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    font-size: 18px;
+.button a{
+   cursor:pointer;
+   text-align:center;
+   font:16px/100% "Trebuchet MS", Arial, Helvetica, sans-serif;
+   font-weight:bold;
+   position:relative;
+   min-width:50px;
+   height:20px;
+   float:left;
+   padding:10px;
+   padding-top:5px;
+   padding-bottom:5px;
+   text-decoration:none;
+   text-shadow:0 1px 1px rgba(0,0,0,.3)
 }
-
-a:hover, a:active {
-    background-color: #DC143C;
+.button:first-child a{
+   -webkit-border-top-left-radius:20px;
+   -webkit-border-bottom-left-radius:20px;
+   -moz-border-topleft-radius:20px;
+   -moz-border-bottomleft-radius:20px;
+   border-top-left-radius:20px;
+   border-bottom-left-radius:20px
 }
-/* End Navigation Section */
+.Red,.Red .button a{
+   color:#faddde;
+   background: #ed1c24;
+   border-right:solid 1px #aa1317;
+   background: -moz-linear-gradient(top, #ed1c24 0%, #aa1317 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed1c24), color-stop(100%,#aa1317));
+   background: -webkit-linear-gradient(top, #ed1c24 0%,#aa1317 100%);
+   background: -o-linear-gradient(top, #ed1c24 0%,#aa1317 100%);
+   background: -ms-linear-gradient(top, #ed1c24 0%,#aa1317 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1c24', endColorstr='#aa1317',GradientType=0 );
+   background: linear-gradient(top, #ed1c24 0%,#aa1317 100%);
+}
+.Red .button a:hover,.Red .button a:focus{
+   background: #c9151b;
+   background: -moz-linear-gradient(top, #c9151b 0%, #a11115 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c9151b), color-stop(100%,#a11115));
+   background: -webkit-linear-gradient(top, #c9151b 0%,#a11115 100%);
+   background: -o-linear-gradient(top, #c9151b 0%,#a11115 100%);
+   background: -ms-linear-gradient(top, #c9151b 0%,#a11115 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9151b', endColorstr='#a11115',GradientType=0 );
+   background: linear-gradient(top, #c9151b 0%,#a11115 100%);
+}
+.Red .button a:active{
+   color:#de898c;
+   background: #aa1317;
+   background: -moz-linear-gradient(top, #aa1317 0%, #ed1c24 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aa1317), color-stop(100%,#ed1c24));
+   background: -webkit-linear-gradient(top, #aa1317 0%,#ed1c24 100%);
+   background: -o-linear-gradient(top, #aa1317 0%,#ed1c24 100%);
+   background: -ms-linear-gradient(top, #aa1317 0%,#ed1c24 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa1317', endColorstr='#ed1c24',GradientType=0 );
+   background: linear-gradient(top, #aa1317 0%,#ed1c24 100%);
+}
+.button:last-child a{
+   float:left;
+   border:none; 
+   -webkit-border-top-right-radius:20px;
+   -webkit-border-bottom-right-radius:20px;
+   -moz-border-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px
+}
+/* End Navigation Bar */
 
 #content1 {
     position: relative;
@@ -157,40 +214,33 @@ p {
     padding: 0px;
 }
 h1 {
-   margin: 0px;
-    padding-left: 10px;
    color: red;
-   font-family: Calibri;
-}
-h2 {
-   margin: 0px;
-   padding-left: 10px;
-   color: #000000;
-   font-family: Calibri;
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 </style>
 </head>
-<body>
 
+<body>
 <div id="header">
 <div class="innertube">
-<h1>Cimstrat</h1>
-<h2>Innovation Development Services</h2>
- <div id="navigation">
- <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#capabilities">Capabilities</a></li>
-  <li><a href="#perspectives">Perspectives</a></li>
-  <li><a href="#clients">Clients</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
- </div> <!-- end navigation -->
+<h1>CSS Top Frame Layout</h1>
+  <div id="navigation">
+    <ul id="menu_wrap" class="Red">
+       <li class="button"><a href="#">Home</a></li>
+       <li class="button"><a href="#">Capabilities</a></li>
+       <li class="button"><a href="#">Perspectives</a></li>
+       <li class="button"><a href="#">Clients</a></li>
+       <li class="button"><a href="#">About Us</a></li>
+       <li class="button"><a href="#">Contact</a></li> 
+   </ul>
+ </div> <!-- End Navigation Bar -->
 </div>
 </div>
 
 <div id="maincontent">
 <div id="innercontent">
+
+  
   <div id="content1">content1</div>
 
     <div id=content2>     
@@ -228,7 +278,6 @@ Take a look at a new marketing service innovation that is changing how marketing
 
 </div>
 </div>
-
 
 </body>
 </html>
