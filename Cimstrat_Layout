@@ -18,7 +18,7 @@ max-height: 100%;
     height: 130px;
     z-index: 1;
     background-color: white;
-/* This box is fixes and has a transparent shadow with 50% transparancy. Scroll
+/* This box is fixes and has a transparent shadow with 50% transparency. Scroll
        the text behind it to test. */
     -moz-box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
@@ -35,7 +35,7 @@ max-height: 100%;
     right: 8px; /* offset for the scroll bars in the main content */
 }
 
-#maincontent {
+#maincontent{
     position: fixed; 
     top: 130px; /*Set top value to HeightOfFrameDiv*/
     left: 0;
@@ -44,7 +44,7 @@ max-height: 100%;
     overflow: scroll; 
     background: #FFF;
 }
-#innercontent {
+#innercontent{
     width: 960px;
     margin-right: auto;
     margin-left: auto;
@@ -56,13 +56,42 @@ max-height: 100%;
 
 #navigation {
     position: absolute;
-    background-color: red;
+    background-color: #FF0000;
     margin-left: auto;
     margin-right: auto;
     width: 960px;
     top: 100px;
     height: 30px;
 }
+/* Begin Navigation Section */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 150px;
+    font-family: Calibri;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover, a:active {
+    background-color: #DC143C;
+}
+/* End Navigation Section */
+
 #content1 {
     position: relative;
     background-color: lightblue;
@@ -128,19 +157,35 @@ p {
     padding: 0px;
 }
 h1 {
+   margin: 0px;
+    padding-left: 10px;
    color: red;
-   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-family: Calibri;
+}
+h2 {
+   margin: 0px;
+   padding-left: 10px;
+   color: #000000;
+   font-family: Calibri;
 }
 </style>
-
 </head>
-
 <body>
 
 <div id="header">
 <div class="innertube">
-<h1>CSS Top Frame Layout</h1>
-<div id="navigation">navigation</div>
+<h1>Cimstrat</h1>
+<h2>Innovation Development Services</h2>
+ <div id="navigation">
+ <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#capabilities">Capabilities</a></li>
+  <li><a href="#perspectives">Perspectives</a></li>
+  <li><a href="#clients">Clients</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+ </div> <!-- end navigation -->
 </div>
 </div>
 
