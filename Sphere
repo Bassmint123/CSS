@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+/* This style sheet create a sphere on a rounded box background */
+#div1 {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border: #a1a1a1 solid 1px;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 25px;
+}
+
+#sphere {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 25%;
+  left: 25%;
+  background-color: yellowgreen;
+  border-radius: 50%;
+  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+  background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);  
+  background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+}
+
+</style>
+</head>
+<body>
+
+<div id="div1">
+   <div id="sphere">
+   </div>
+</div>
+
+</body>
+</html>
