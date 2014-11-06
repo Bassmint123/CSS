@@ -2,7 +2,7 @@
 <html>
 <head>
 <style> 
-/* This style sheet create a sphere on a rounded box background */
+/* This style sheet create a sphere on a rounded box background  */
 #div1 {
     width: 400px;
     height: 400px;
