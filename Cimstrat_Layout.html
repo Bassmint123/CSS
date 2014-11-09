@@ -1,0 +1,189 @@
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Cimstrat Corp Layout</title>
+<style type="text/css">
+
+body{
+margin: 0;
+padding: 0;
+border: 0;
+overflow: hidden;
+height: 100%; 
+max-height: 100%; 
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    width: 100%; 
+    height: 130px;
+    z-index: 1;
+    background-color: white;
+/* This box is fixes and has a transparent shadow with 50% transparancy. Scroll
+       the text behind it to test. */
+    -moz-box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+}
+.innertube{
+    position: relative;
+    width: 960px;
+    height: 130px;
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    right: 8px; /* offset for the scroll bars in the main content */
+}
+
+#maincontent{
+    position: fixed; 
+    top: 130px; /*Set top value to HeightOfFrameDiv*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: scroll; 
+    background: #FFF;
+}
+#innercontent{
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.innerwrap {
+    padding: 15px; 
+}
+
+#navigation {
+    position: absolute;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    top: 100px;
+    height: 30px;
+}
+#content1 {
+    position: relative;
+    background-color: lightblue;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    height: 300px;
+}
+#content2 {
+    position: relative;
+    background-color: lightblue;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    height: 300px;
+}
+#leftcol {
+    position: absolute;
+    background-color: orange;
+    top: 0px;
+    left: 0px;
+    width: 320px;
+    height: 300px;
+}
+#centercol {
+    position: absolute;
+    background-color: lightgrey;
+    left: 320px;
+    width: 320px;
+    height: 300px;
+
+}
+#rightcol {
+    position: relative;
+    background-color: yellow;
+    right: -640px;
+    width: 320px;
+    height: 300px;
+}
+#content3 {
+    position: relative;
+    background-color: lightgreen;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    height: 200px;
+}
+#footer{
+    position: relative;
+    width:100%;
+    height:50px;
+    background:#333;
+    color:#FFF;
+    text-align:center;
+}
+p {
+    font-family: arial;
+    font-size: .9em;
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+   color: red;
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="header">
+<div class="innertube">
+<h1>CSS Top Frame Layout</h1>
+<div id="navigation">navigation</div>
+</div>
+</div>
+
+<div id="maincontent">
+<div id="innercontent">
+  <div id="content1">content1</div>
+
+    <div id=content2>     
+       <div id="leftcol">
+           <div class="innerwrap">
+            <br>
+            <p><span style="font-weight: bold">
+Commitment & Success...</span><br>The business environment of today gives exceptional opportunities for positive and lasting changes. The people at Cimstrat are dedicated to helping you achieve your innovation and marketing goals. Specifically, we help clients develop marketing and innovation strategies, initiatives and idea generation to leverage their organization's resources. Would you like to see how we do it?
+            </p>
+           </div>
+        </div> <!-- end left column -->
+       <div id="centercol">
+       <div class="innerwrap">
+       <p>Where would YOU start with an innovation strategy? We start with:  1. Your Vision 2. Your Goals 3. A Prosperity Mindset  4. Team Work
+       </p>
+       </div>
+       </div> <!-- end center column -->
+       <div id="rightcol">
+          <div class="innerwrap"><p>
+What would your business look like if you knew the the REAL secrets about innovation?
+<br>
+Innovation management is truly a challenge in today's business environment. Cimstrat, leverages top senior talent and experience to meet those challenges and turn them into  strengths. We bring new growth and profitability to your balance sheet.
+<br>
+Example:
+Take a look at a new marketing service innovation that is changing how marketing professionals drive new business. See it 
+</p>
+          </div>
+       </div> <!-- end right column -->
+    </div> <!-- end content2 -->
+
+    <div id="content3">content3</div>
+ 
+<div id="footer">Footer
+</div> <!-- end footer -->
+
+</div>
+</div>
+
+
+</body>
+</html>
