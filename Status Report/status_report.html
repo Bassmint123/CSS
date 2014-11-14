@@ -2,43 +2,194 @@
 <html>
 <style>
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    float: left;
+    width: 100%;
+    height: 180px;
+    background-color: #005392;
+    outline: 1px solid black;
+}
+#center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.centertext {
+    text-align: center;
+}
+
 #area1 {
     float: left;
     width: 100%;
-    height: 100px;
-    background-color: #e0e0e0;
+    height: 160px;
+    background-color: #FFFFFF;
     outline: 1px solid black;
-    font-size: 1.5em;
+    font-size: 3.5em;
+    font-weight: bold;
+    
+}
+#health {
+    float: left;
+    width: 100%;
+    height: 160px;
+    background-color: #FFFFFF;
+    outline: 1px solid black;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
     
 }
 
 #area2, #area3, #area4 {
     float: left;
     width: 33.33%;
-    height: 50px;
+    height: 100px;
     background-color: yellowgreen;
     outline: 1px solid black;
+    font-size: 3.0em;
     
 }
 
 #area5 {
     float: left;
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: #e0e0e0;
     outline: 1px solid black;
-    
+    font-size: 3.0em;    
+}
+
+#area6 {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #e0e0e0;
+    outline: 1px solid black;
+    font-size: 3.0em;    
+}
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
 }
 </style>
 
+
 <body>
-<div id="area1">Project Name: Global OEE (Sligo)</div>
-<div id="area2">Budget</div>
-<div id="area3">Schedule</div>
-<div id="area4">Scope</div>
-<div id="area5">Budget Summary</div>
-<div id="area5">Activities of past two weeks</div>
-<div id="area5">Activities of next two weeks</div>
-<div id="area5">Issues & Risk</div>
+<div id="logo">
+<div id="center">
+<img src="abbvielogo.png" width="817" height="174">
+</div>
+</div>
+<div id="area1"><p>Project Name: Global OEE (Sligo)</p></div>
+<div id="area1"><p>Date: November 12, 2014</p></div>
+<div id="area1"><p>Project Manager: Brad Beiermann</p></div>
+<div id="health">Project Status <br> (<span style="color: red">Red</span>, <span style="color: orange">Yellow</span>, <span style="color: yellowgreen">Green</span>)</div>
+<div id="area2"><div class="centertext">Budget</div></div>
+<div id="area3"><div class="centertext">Schedule</div></div>
+<div id="area4"><div class="centertext">Scope</div></div>
+<div id="area6" class="centertext"><p><b>Budget Summary</b><p>
+
+<table>
+  <tr>
+    <th>Capital Budget</th>
+    <th>Planned</th>
+    <th>Actual</th>
+  </tr>
+  <tr>
+    <td>Hardware</td>
+    <td>$63,000</td>
+    <td>$0</td>
+  </tr>
+  <tr>
+    <td>Engineering</td>
+    <td>$32,000</td>
+    <td>$7000</td>
+  </tr>
+  <tr>
+    <td>Certification</td>
+    <td>$48,000</td>
+    <td>$0</td>
+  </tr>
+  </table>
+<br>
+<table>
+  <tr>
+    <th>Expense Budget</th>
+    <th>Planned</th>
+    <th>Actual</th>
+  </tr>
+  <tr>
+    <td>Travel</td>
+    <td>$36,000</td>
+    <td>$0</td>
+  </tr>
+  <tr>
+    <td>Project Manager</td>
+    <td>$16,000</td>
+    <td>$31,900</td>
+  </tr>
+    </table>
+
+<br>
+
+</div>
+<div id="area5"><br><b>Activities of past two weeks:</b>
+<p>
+<ul>
+  <li> Vector has sent their estimates ($8,250)</li>
+  <li> Fette confirmed that they can activate the functions we require.</li>
+  <li> Kevin has added the tags for the Tablet Press diagnostic codes, text and fault text.</li>
+  <li> Began transitioning to a new PM</li>
+</ul>
+</p>
+
+</div>
+<div id="area5"><br><b>Activities of next two weeks:</b>
+<p>
+<ul>
+  <li> Fette engineering is working on their quote</li>
+  <li> Technical meeting to cover questions and data dependency on various tags from Sligo.</li>
+  <li> OSI PI AF/EF template development estimates and deployment of the Synthroid line.</li>
+</ul>
+</p>
+
+
+</div>
+<div id="area6" class="centertext"><br><b>Issues & Risks</b>
+<p></p>
+
+
+<table>
+  <tr>
+    <th>Issues/Risks</th>
+    <th>Impact</th>
+    <th>Action Plan</th>
+  </tr>
+  <tr>
+    <td>Vendor leadtimes and costs coming within budget and schedule per original estimates (Fette & Vector).
+</td>
+    <td>Medium</td>
+    <td>The Sligo team now has the technical info on the equipment. They will be reaching out for their proposals due early/mid-October.
+</td>
+  </tr>
+      </table>
+</div>
+<div id="logo">
+<div id="center">
+<img src="abbvielogo.png" width="817" height="180">
+</div>
+</div>
 </body>
 </html>
