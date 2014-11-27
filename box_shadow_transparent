@@ -28,7 +28,7 @@ div.box2 {
     width: 250px;
     height: 200px;
     background-color: white;
-    /* This box is fixed and has a transparent shadow with 50% transparancy. Scroll
+    /* This box is fixed and has a transparent shadow with 50% transparancy. You can scroll
        the text behind it to test. */
     -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
     -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
