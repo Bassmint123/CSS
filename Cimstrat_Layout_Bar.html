@@ -1,5 +1,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Cimstrat Corp Layout</title>
+<title>Cimstrat Corporation</title>
 <style type="text/css">
 
 body{
@@ -25,6 +25,15 @@ max-height: 100%;
     -webkit-box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
     box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
 }
+h1 {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    /* text-align: center; */
+    color: #d0d0d0;
+    text-shadow: 5px 5px 5px #000000;
+    font-family: Arial;
+}
 .innertube{
     position: relative;
     width: 960px;
@@ -46,7 +55,7 @@ max-height: 100%;
     background: #FFF;
 }
 #innercontent{
-    width: 960px;
+    width: 100%; 
     margin-right: auto;
     margin-left: auto;
 }
@@ -149,14 +158,76 @@ max-height: 100%;
 }
 /* End Navigation Bar */
 
-#content1 {
-    position: relative;
-    background-color: lightblue;
-    top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px;
-    height: 300px;
+
+/****** Start New CSS Content **********/
+.cd-fixed-bg-top {
+    min-height: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cd-fixed-bg {
+    min-height: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+
+.cd-fixed-bg-top.cd-bg-1 {
+  background-image: url("cd-background-1.jpg");
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("cd-background-2.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("cd-background-3.jpg");
+}
+/* 4th one if needed */
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("img/cd-background-4.jpg");
+}
+
+.cd-container {
+    height: 250px;
+    background-color: white;
+}
+.cd-container2 {
+    height: 330px;
+    background: -webkit-linear-gradient(90deg, yellowgreen, #D0D0D0,#D0D0D0, #909090, #909090, #6699FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, yellowgreen, #D0D0D0,#D0D0D0, #909090, #909090, #6699FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, yellowgreen, #D0D0D0,#D0D0D0, #909090, #909090, #6699FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, yellowgreen, #D0D0D0,#D0D0D0, #909090, #909090, #6699FF); /* Standard syntax (must be last) */
+}
+ 
+.cd-scrolling-bg {
+    min-height: 50%;
+}
+
+#city-title1 {
+    word-spacing: 50px;
+    padding-top: 100px;
+    text-align: center;
+    color: #d0d0d0;
+    text-shadow: 5px 5px 5px #000000;
+    font-family: Arial;
+    font-size: 2.0em;
+    font-weight: bold;
+}
+#city-block {
+    border-radius: 25px;
+    margin: 0 auto;
+    background-color: #d0d0d0;
+    width: 700px;
+    height: 10px;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+/* Column Text*/
+.innerwrap {
+    padding: 15px; 
 }
 #content2 {
     position: relative;
@@ -169,36 +240,31 @@ max-height: 100%;
 }
 #leftcol {
     position: absolute;
-    background-color: orange;
+    background-color: #D0D0D0;
     top: 0px;
     left: 0px;
     width: 320px;
-    height: 300px;
+    height: 330px;
 }
 #centercol {
     position: absolute;
-    background-color: lightgrey;
+    background-color: #B0B0B0;
     left: 320px;
     width: 320px;
-    height: 300px;
+    height: 330px;
 
 }
 #rightcol {
     position: relative;
-    background-color: yellow;
+    background-color: #909090;
     right: -640px;
     width: 320px;
-    height: 300px;
+    height: 330px;
 }
-#content3 {
-    position: relative;
-    background-color: lightgreen;
-    top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px;
-    height: 200px;
-}
+
+
+/****** End New CSS Content ************/
+
 #footer{
     position: relative;
     width:100%;
@@ -207,23 +273,14 @@ max-height: 100%;
     color:#FFF;
     text-align:center;
 }
-p {
-    font-family: arial;
-    font-size: .9em;
-    margin: 0px;
-    padding: 0px;
-}
-h1 {
-   color: red;
-   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
+
 </style>
 </head>
 
 <body>
 <div id="header">
 <div class="innertube">
-<h1>CSS Top Frame Layout</h1>
+<h1>Cimstrat Frame Layout</h1>
   <div id="navigation">
     <ul id="menu_wrap" class="Red">
        <li class="button"><a href="#">Home</a></li>
@@ -240,10 +297,17 @@ h1 {
 <div id="maincontent">
 <div id="innercontent">
 
-  
-  <div id="content1">content1</div>
+<!-- *************** Start new content ********************-->
 
-    <div id=content2>     
+
+ <div class="cd-fixed-bg-top cd-bg-1">
+         <div id="city-title1">Innovation. Imagination. Leadership.</div>
+         <div id="city-block"></div>
+ </div> 
+    <div class="cd-scrolling-bg cd-color-2">
+        <div class="cd-container2">
+            <!-- begin content2 -->
+                <div id=content2>     
        <div id="leftcol">
            <div class="innerwrap">
             <br>
@@ -270,9 +334,34 @@ Take a look at a new marketing service innovation that is changing how marketing
           </div>
        </div> <!-- end right column -->
     </div> <!-- end content2 -->
+        </div> 
+    </div>
 
-    <div id="content3">content3</div>
- 
+ <div class="cd-fixed-bg cd-bg-2">
+        <!-- title goes here -->
+    </div> 
+<div class="cd-scrolling-bg cd-color-2">
+        <div class="cd-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
+            </p>
+        </div> 
+    </div>
+<div class="cd-fixed-bg cd-bg-3">
+        <h1><!-- title goes here --></h1>
+    </div> 
+<div class="cd-scrolling-bg cd-color-2">
+        <div class="cd-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
+            </p>
+        </div> 
+    </div>
+
+
+<!--**************** End new content **********************-->
+    
+ <!-- Start Footer-->
 <div id="footer">Footer
 </div> <!-- end footer -->
 
