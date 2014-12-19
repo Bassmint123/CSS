@@ -10,7 +10,7 @@
     height: 8px;
     z-index: 1;
 /* This box is fixed and has a transparent shadow with 50% transparancy. Scroll
-       the text behind it to test. */
+       the text behind it to test functionality. */
     -moz-box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
     box-shadow: 0px -8px 8px rgba(0,0,0,0.5);
