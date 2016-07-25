@@ -1,0 +1,12 @@
+<style>
+ /* Prevent the scroll bar from being hidden while any modals are open */
+ .modal {
+     overflow-y: auto;
+     }
+    .modal-open {
+    overflow: auto;
+    }
+    .modal-open[style] {
+    padding-right: 0px !important;
+    }
+</style>
